@@ -1,0 +1,10 @@
+main{
+    .contactos{
+        .contactos-contenedor{
+            @include flex-section(flex,row,center,normal,center);
+            .contactos-div{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,367 @@
+@media screen and (max-width:1550px) {
+    main{
+        .contactos{
+            .contactos-contenedor{
+                flex-direction: column;
+                iframe{
+                    margin: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .contactos-div{
+                    padding: 10px;
+                    text-align: center;
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    main{
+        .hero{
+            .titulos{
+                padding: 20px;
+                font-size: 50px
+            }
+            a{
+                font-size: nth($font-size, 3);
+            }
+        }
+        .servicio{
+            margin: 40px 0px 40px 0px;
+            div{
+                h2{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 25px;
+                    padding: 15px;
+                }
+            }
+        }
+        .destacados{
+            margin: 40px 0px 40px 0px;
+            h2{
+                font-size: 50px;
+            }
+            ul{
+                font-size: 25px;
+            }
+        }
+        .experiencias{
+            margin: 40px 0px 40px 0px;
+            h2{
+                font-size: 50px;
+            }
+            .owl-carousel{
+                .item{
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .servicios-pagina{
+            .parrafos{
+                font-size: 25px;
+            }
+            .lista-servicios{
+                li{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    main{
+        .galeria{
+            .galeria-contenedor{
+                .img-1 {
+                    grid-column: span 1;
+                    grid-row: span 1;
+                }
+                .img-2 {
+                    grid-row: span 1;
+                }
+                .img-3{
+                    grid-row: span 1;
+                }
+                .img-4{
+                    grid-row: span 2;
+                }
+            }
+            .galeria-contenedor-2{
+                .img-2-1{
+                    grid-row: span 1;
+                }
+                .img-2-2 {
+                    grid-column: span 1;
+                }
+                .img-2-3{
+                    grid-row: span 1;
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+    main{
+        .titulos{
+            font-size: 50px;
+        }
+        .titulos-secundarios{
+            font-size: 40px;
+        }
+        .salones{
+            .owl-carousel{
+                .item{
+                    .salon-belgrano{
+                        .salon-belgrano-contenedor{
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                    .salon-palermo{
+                        .salon-palermo-contenedor{
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                    .salon-tigre{
+                        .salon-tigre-contenedor{
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        div{
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width:900px) {
+    main{
+        .hero{
+            height: 60vh;
+        }
+        .servicio{
+            flex-direction: column;
+            .servicio-imagen{
+                img{
+                    border-left: 0px;
+                    border-top: 3px $borde-color solid;
+                    border-left: none;
+                }
+            }
+        }
+    }
+    main{
+        .servicios-pagina{
+            .bodas-contenedor{
+                .bodas-img-contenedor{
+                    padding: 40px;
+                    flex-direction: column;
+                }
+            }
+            .cumpleaños-contenedor{
+                .cumpleaños-img-contenedor{
+                    padding: 40px;
+                    flex-direction: column;
+                }
+            }
+            .eventos-corporativos-contenedor{
+                .eventos-corporativos-img-contenedor{
+                    padding: 40px;
+                    flex-direction: column;
+                }
+            }
+            .fiesta-privada-contenedor{
+                .fiesta-privada-img-contenedor{
+                    padding: 40px;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    main{
+        .galeria{
+            .galeria-contenedor{
+                grid-template-columns: repeat(2, 1fr);
+                .img-4{
+                    grid-row: span 1;
+                }
+            }
+            .galeria-contenedor-2{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+    main{
+        .salones{
+            .owl-carousel{
+                .item{
+                    .salon-belgrano{
+                        p{
+                            font-size: 25px;
+                        }
+                        .salon-belgrano-contenedor{
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                    .salon-palermo{
+                        p{
+                            font-size: 25px;
+                        }
+                        .salon-palermo-contenedor{
+                            grid-template-columns: 1fr;
+                        }
+                        }
+                    .salon-tigre{
+                        p{
+                            font-size: 25px;
+                        }
+                        .salon-tigre-contenedor{
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        .navbar{
+            .container-fluid{
+                .titulo-nav{
+                    font-size: 45px;
+                }
+            }
+            .navbar-collapse{
+                .paginas-nav{
+                    flex-direction: column;
+                        li{
+                            font-size: 25px;
+                            padding: 10px;
+                            margin: 15px;
+                        }
+                }
+            }
+        }
+    }
+    main{
+        .galeria{
+            .galeria-contenedor{
+                grid-template-columns: 1fr;
+                .img-4{
+                    grid-row: span 1;
+                }
+            }
+            .galeria-contenedor-2{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    main{
+        .servicios-pagina{
+            .parrafos{
+                padding: 25px;
+            }
+            .bodas-contenedor{
+                margin: 0px 0px 20px 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .bodas-img-contenedor{
+                    padding: 20px;
+                    .lista-servicios{
+                        padding: 5px;
+                        li{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .cumpleaños-contenedor{
+                margin: 0px 0px 20px 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .cumpleaños-img-contenedor{
+                    padding: 20px;
+                    .lista-servicios{
+                        padding: 5px;
+                        li{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .eventos-corporativos-contenedor{
+                margin: 0px 0px 20px 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .eventos-corporativos-img-contenedor{
+                    padding: 20px;
+                    .lista-servicios{
+                        padding: 5px;
+                        li{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .fiesta-privada-contenedor{
+                margin: 0px 0px 20px 0px;
+                h2{
+                    font-size: 45px;
+                }
+                .fiesta-privada-img-contenedor{
+                    padding: 20px;
+                    .lista-servicios{
+                        padding: 5px;
+                        li{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .salones{
+            .owl-carousel{
+                margin: 20px 0px 20px 0px;
+            }
+        }
+    }
+    main{
+        .contactos{
+            .contactos-contenedor{
+                margin: 40px 0px 40px 0px;
+            }
+        }
+    }
+    footer{
+        div{
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}

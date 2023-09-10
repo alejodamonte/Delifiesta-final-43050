@@ -1,0 +1,77 @@
+main{
+    .salones{
+        .owl-carousel{
+            width: auto;
+            background-color: $bg-color-section;
+            margin: 40px;
+            border: 3px $borde-color solid;
+            .item{
+                height: 100%;
+                width: 100%;
+                h2{
+                    text-align: center;
+                }
+                .salon-belgrano{
+                    p{
+                        margin: 20px;
+                    }
+                    .salon-belgrano-contenedor{
+                        margin: 20px;
+                        @extend %grid-salones;
+                        gap: 20px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border: 3px $borde-color solid;
+                            transition: 1s;
+                            &:hover{
+                                transform: scale(1.03);
+                            }
+                        }
+                    }
+                }
+                .salon-palermo{
+                    p{
+                        margin: 20px;
+                    }
+                    .salon-palermo-contenedor{
+                        margin: 20px;
+                        @extend %grid-salones;
+                        gap: 20px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border: 3px $borde-color solid;
+                            transition: 1s;
+                            &:hover{
+                                transform: scale(1.03);
+                            }
+                        }
+                    }
+                }
+                .salon-tigre{
+                    p{
+                        margin: 20px;
+                    }
+                    .salon-tigre-contenedor{
+                        margin: 20px;
+                        @extend %grid-salones;
+                        gap: 20px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border: 3px $borde-color solid;
+                            transition: 1s;
+                            &:hover{
+                                transform: scale(1.03);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

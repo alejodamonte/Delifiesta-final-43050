@@ -1,0 +1,636 @@
+@charset "UTF-8";
+/*------------   Colores   ------------*/
+/*------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=Noto+Serif:ital,wght@1,400;1,500&display=swap");
+main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor, main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor, main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px; }
+
+/*------------   FUENTES   ------------*/
+/*------------   RESET   ------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #9b969e; }
+
+body a {
+  color: black;
+  text-decoration: none; }
+
+body ul {
+  list-style: none; }
+
+/*------------   TIPOGRAFIAS GENERALES   ------------*/
+.titulos-secundarios {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: 700;
+  color: black; }
+
+.titulos {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: 700;
+  color: black; }
+
+.lista-servicios {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 20px;
+  color: black; }
+
+.parrafos {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: black; }
+
+.centrado {
+  text-align: center; }
+
+/*------------   CLASES BOOSTRAP   ------------*/
+.titulo-nav {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: 700; }
+  .titulo-nav span {
+    color: #D36135; }
+
+.paginas-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  margin: 10px; }
+
+/*---   HERO   ---*/
+main .hero {
+  border-bottom: 5px black solid;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/catering.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  main .hero .titulos {
+    padding: 50px;
+    color: white; }
+  main .hero a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #cdc5b4de;
+    border: 3px black solid;
+    padding: 10px; }
+    main .hero a:hover {
+      color: black;
+      background-color: #d36235e0; }
+
+main .servicio {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: normal;
+  margin: 40px; }
+  main .servicio div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: normal;
+    align-items: center; }
+    main .servicio div h2 {
+      text-align: center; }
+  main .servicio .servicio-imagen img {
+    border-left: 3px black solid;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+main .destacados {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .destacados h2 {
+    text-align: center; }
+  main .destacados .centrado {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px; }
+
+main .experiencias {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  margin: 40px; }
+  main .experiencias .owl-carousel {
+    background-color: #cdc5b4; }
+    main .experiencias .owl-carousel .item {
+      border: 3px black solid;
+      margin: 20px;
+      padding: 20px; }
+      main .experiencias .owl-carousel .item h3 {
+        padding: 5px;
+        background-color: #9b969e;
+        font-family: 'Noto Serif', serif;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 600; }
+      main .experiencias .owl-carousel .item p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 30px;
+        font-weight: 600; }
+
+main .contactos .contactos-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .contactos .contactos-contenedor .contactos-div {
+    text-align: center; }
+
+footer {
+  border-top: 3px black solid;
+  background-color: #cdc5b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-content: center;
+    align-items: center;
+    padding: 20px; }
+    footer div p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center; }
+    footer div .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      footer div .redes h4 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center; }
+      footer div .redes ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px; }
+        footer div .redes ul li a img {
+          height: 62px;
+          width: 62px;
+          padding: 10px; }
+  footer p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 20px; }
+
+main .galeria {
+  margin: 40px; }
+  main .galeria h2 {
+    text-align: center;
+    background-color: #cdc5b4;
+    font-size: 50px; }
+  main .galeria .galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
+    margin-bottom: 30px; }
+    main .galeria .galeria-contenedor div {
+      transition: 1s; }
+      main .galeria .galeria-contenedor div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid; }
+      main .galeria .galeria-contenedor div:hover {
+        transform: scale(1.02); }
+    main .galeria .galeria-contenedor .img-1 {
+      grid-column: span 2;
+      grid-row: span 2; }
+    main .galeria .galeria-contenedor .img-2 {
+      grid-row: span 2; }
+    main .galeria .galeria-contenedor .img-3 {
+      grid-row: span 2; }
+    main .galeria .galeria-contenedor .img-4 {
+      grid-row: span 3; }
+  main .galeria .galeria-contenedor-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px; }
+    main .galeria .galeria-contenedor-2 div {
+      transition: 1s; }
+      main .galeria .galeria-contenedor-2 div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid; }
+      main .galeria .galeria-contenedor-2 div:hover {
+        transform: scale(1.02); }
+    main .galeria .galeria-contenedor-2 .img-2-1 {
+      grid-row: span 2; }
+    main .galeria .galeria-contenedor-2 .img-2-2 {
+      grid-column: span 2; }
+    main .galeria .galeria-contenedor-2 .img-2-3 {
+      grid-column: span 2;
+      grid-row: span 2; }
+
+header .navbar {
+  background-color: #cdc5b4;
+  border-bottom: 3px black solid; }
+  header .navbar .navbar-collapse .botones-nav .nav-item {
+    background-color: #aaa498;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 1px 10px 1px 10px; }
+    header .navbar .navbar-collapse .botones-nav .nav-item:hover {
+      background-color: #D36135; }
+  header .navbar .navbar-collapse .paginas-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin: 10px; }
+
+main .salones .owl-carousel {
+  width: auto;
+  background-color: #cdc5b4;
+  margin: 40px;
+  border: 3px black solid; }
+  main .salones .owl-carousel .item {
+    height: 100%;
+    width: 100%; }
+    main .salones .owl-carousel .item h2 {
+      text-align: center; }
+    main .salones .owl-carousel .item .salon-belgrano p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor img:hover {
+          transform: scale(1.03); }
+    main .salones .owl-carousel .item .salon-palermo p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor img:hover {
+          transform: scale(1.03); }
+    main .salones .owl-carousel .item .salon-tigre p {
+      margin: 20px; }
+    main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+      margin: 20px;
+      gap: 20px; }
+      main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 3px black solid;
+        transition: 1s; }
+        main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor img:hover {
+          transform: scale(1.03); }
+
+main .servicios-pagina .parrafos {
+  text-align: center; }
+
+main .servicios-pagina .bodas-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .servicios-pagina .bodas-contenedor h2 {
+    text-align: center; }
+  main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .bodas-img img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios li {
+        text-align: center; }
+
+main .servicios-pagina .cumpleaños-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .servicios-pagina .cumpleaños-contenedor h2 {
+    text-align: center; }
+  main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .cumpleaños-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios li {
+        text-align: center; }
+
+main .servicios-pagina .eventos-corporativos-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px; }
+  main .servicios-pagina .eventos-corporativos-contenedor h2 {
+    text-align: center; }
+  main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .eventos-corporativos-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios li {
+        text-align: center; }
+
+main .servicios-pagina .fiesta-privada-contenedor {
+  background-color: #cdc5b4;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: normal;
+  align-items: center;
+  margin: 40px;
+  margin-bottom: 30px; }
+  main .servicios-pagina .fiesta-privada-contenedor h2 {
+    text-align: center; }
+  main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: normal;
+    align-items: center; }
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .fiesta-privada-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios {
+      padding: 30px; }
+      main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios li {
+        text-align: center; }
+
+@media screen and (max-width: 1550px) {
+  main .contactos .contactos-contenedor {
+    flex-direction: column; }
+    main .contactos .contactos-contenedor iframe {
+      margin: 15px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .contactos .contactos-contenedor .contactos-div {
+      padding: 10px;
+      text-align: center; }
+      main .contactos .contactos-contenedor .contactos-div h2 {
+        font-size: 40px; } }
+
+@media screen and (max-width: 1400px) {
+  main .hero .titulos {
+    padding: 20px;
+    font-size: 50px; }
+  main .hero a {
+    font-size: 30px; }
+  main .servicio {
+    margin: 40px 0px 40px 0px; }
+    main .servicio div h2 {
+      font-size: 50px; }
+    main .servicio div p {
+      font-size: 25px;
+      padding: 15px; }
+  main .destacados {
+    margin: 40px 0px 40px 0px; }
+    main .destacados h2 {
+      font-size: 50px; }
+    main .destacados ul {
+      font-size: 25px; }
+  main .experiencias {
+    margin: 40px 0px 40px 0px; }
+    main .experiencias h2 {
+      font-size: 50px; }
+    main .experiencias .owl-carousel .item h3 {
+      font-size: 30px; }
+    main .experiencias .owl-carousel .item p {
+      font-size: 25px; }
+  main .servicios-pagina .parrafos {
+    font-size: 25px; }
+  main .servicios-pagina .lista-servicios li {
+    font-size: 30px; }
+  main .galeria .galeria-contenedor .img-1 {
+    grid-column: span 1;
+    grid-row: span 1; }
+  main .galeria .galeria-contenedor .img-2 {
+    grid-row: span 1; }
+  main .galeria .galeria-contenedor .img-3 {
+    grid-row: span 1; }
+  main .galeria .galeria-contenedor .img-4 {
+    grid-row: span 2; }
+  main .galeria .galeria-contenedor-2 .img-2-1 {
+    grid-row: span 1; }
+  main .galeria .galeria-contenedor-2 .img-2-2 {
+    grid-column: span 1; }
+  main .galeria .galeria-contenedor-2 .img-2-3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+  main .titulos {
+    font-size: 50px; }
+  main .titulos-secundarios {
+    font-size: 40px; }
+  main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+  footer div p {
+    font-size: 25px; } }
+
+@media screen and (max-width: 900px) {
+  main .hero {
+    height: 60vh; }
+  main .servicio {
+    flex-direction: column; }
+    main .servicio .servicio-imagen img {
+      border-left: 0px;
+      border-top: 3px black solid;
+      border-left: none; }
+  main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+    padding: 40px;
+    flex-direction: column; }
+  main .galeria .galeria-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+    main .galeria .galeria-contenedor .img-4 {
+      grid-row: span 1; }
+  main .galeria .galeria-contenedor-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  main .salones .owl-carousel .item .salon-belgrano p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-belgrano .salon-belgrano-contenedor {
+    grid-template-columns: 1fr; }
+  main .salones .owl-carousel .item .salon-palermo p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-palermo .salon-palermo-contenedor {
+    grid-template-columns: 1fr; }
+  main .salones .owl-carousel .item .salon-tigre p {
+    font-size: 25px; }
+  main .salones .owl-carousel .item .salon-tigre .salon-tigre-contenedor {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 600px) {
+  header .navbar .container-fluid .titulo-nav {
+    font-size: 45px; }
+  header .navbar .navbar-collapse .paginas-nav {
+    flex-direction: column; }
+    header .navbar .navbar-collapse .paginas-nav li {
+      font-size: 25px;
+      padding: 10px;
+      margin: 15px; }
+  main .galeria .galeria-contenedor {
+    grid-template-columns: 1fr; }
+    main .galeria .galeria-contenedor .img-4 {
+      grid-row: span 1; }
+  main .galeria .galeria-contenedor-2 {
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main .servicios-pagina .parrafos {
+    padding: 25px; }
+  main .servicios-pagina .bodas-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .bodas-contenedor h2 {
+      font-size: 45px; }
+    main .servicios-pagina .bodas-contenedor .bodas-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .bodas-contenedor .bodas-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .cumpleaños-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .cumpleaños-contenedor h2 {
+      font-size: 45px; }
+    main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .cumpleaños-contenedor .cumpleaños-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .eventos-corporativos-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .eventos-corporativos-contenedor h2 {
+      font-size: 45px; }
+    main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .eventos-corporativos-contenedor .eventos-corporativos-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .servicios-pagina .fiesta-privada-contenedor {
+    margin: 0px 0px 20px 0px; }
+    main .servicios-pagina .fiesta-privada-contenedor h2 {
+      font-size: 45px; }
+    main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor {
+      padding: 20px; }
+      main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios {
+        padding: 5px; }
+        main .servicios-pagina .fiesta-privada-contenedor .fiesta-privada-img-contenedor .lista-servicios li {
+          font-size: 25px; }
+  main .salones .owl-carousel {
+    margin: 20px 0px 20px 0px; }
+  main .contactos .contactos-contenedor {
+    margin: 40px 0px 40px 0px; }
+  footer div p {
+    font-size: 20px; } }

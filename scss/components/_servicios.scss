@@ -1,0 +1,108 @@
+main{
+    .servicios-pagina{
+        .parrafos{
+            text-align: center;
+        }
+        .bodas-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            .bodas-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
+                @include flex(flex,row,space-around,normal,center);
+                .bodas-img{
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                    .lista-servicios{
+                        padding: 30px;
+                        li{
+                            text-align: center;
+                        }
+                    }
+            }
+        }
+        .cumpleaños-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            .cumpleaños-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
+                @include flex(flex,row-reverse,space-around,normal,center);
+                .cumpleaños-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .lista-servicios{
+                    padding: 30px;
+                    li{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .eventos-corporativos-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            h2{
+                text-align: center;
+            }
+            .eventos-corporativos-img-contenedor{
+                height: 100%;
+                width: 100%;
+                margin-bottom: 40px;
+                @include flex(flex,row,space-around,normal,center);
+                .eventos-corporativos-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .lista-servicios{
+                    padding: 30px;
+                    li{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .fiesta-privada-contenedor{
+            @include flex-section(flex,column,center,normal,center);
+            margin-bottom: 30px;
+            h2{
+                text-align: center;
+            }
+            .fiesta-privada-img-contenedor{
+                width: 100%;
+                height: 100%;
+                margin-bottom: 40px;
+                @include flex(flex,row-reverse,space-around,normal,center);
+                .fiesta-privada-img{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .lista-servicios{
+                    padding: 30px;
+                    li{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

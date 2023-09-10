@@ -1,0 +1,29 @@
+
+header{
+    .navbar{
+        background-color: $bg-color-section;
+        border-bottom: 3px $borde-color solid;
+        .navbar-collapse{
+            .botones-nav{
+                .nav-item{
+                    background-color: $boton-nav-color ;
+                    font-family: 'Cormorant Garamond', serif;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 700;
+                    padding: 1px 10px 1px 10px;
+                    &:hover{
+                        background-color: $color-titulo;
+                    }
+                }
+            }
+            .paginas-nav{
+                width: 100%;
+                display: flex;
+                justify-content:  space-around;
+                align-items: end;
+                margin: 10px;
+            }
+        }
+    }
+}
